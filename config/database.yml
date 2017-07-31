@@ -1,0 +1,25 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: seanjhulse
+  pool: 5
+  username: postgres
+  password: password
+  host: localhost
+
+test: &TEST
+  adapter: postgresql
+  encoding: utf8
+  database: seanjhulse
+  pool: 5
+  username: postgres
+  password: password
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: seanjhulse
+  pool: 5
+  username: postgres
+  password: password
