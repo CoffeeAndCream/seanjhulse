@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RubyOnRails Auth0 Sample</title>
+  <title>Sean J Hulse</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= yield :cdn_code %>
   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' %>
   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
+  <%= stylesheet_link_tag    '//fonts.googleapis.com/icon?family=Material+Icons' %>
+  <%= stylesheet_link_tag    '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css' %>
+  <%= stylesheet_link_tag    'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css' %>
+  <%= stylesheet_link_tag    'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
@@ -19,7 +24,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">My Application</a>
+          <%= image_tag "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-1/p160x160/18951346_10213690848013374_1946179406048331833_n.jpg?oh=c90dff5dc49ae673b1868da07045d602&oe=59F34106", width: 50, height: 50, id: 'facebook-photo' %>
+          <a class="navbar-brand" href="#">Sean J Hulse</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -33,6 +39,7 @@
     <%= yield %>
   </div>
   <%= javascript_include_tag '//cdn.auth0.com/js/auth0/8.8/auth0.min.js' %>
+  <%= javascript_include_tag '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js' %>
   <script>
   var webAuth = new auth0.WebAuth({
     domain: '<%= Rails.application.secrets.auth0_domain %>',

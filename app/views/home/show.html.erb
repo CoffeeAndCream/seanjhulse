@@ -1,6 +1,93 @@
+<h1>My Work <i class="material-icons">code</i></h1>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-9">
+      <div class="ruby-crm-slideshow">
+        <div><%= image_tag '/work/Ruby-CRM-leads.png', class: 'work-image' %></div>
+        <div><%= image_tag '/work/Ruby-CRM-lead.png', class: 'work-image' %></div>
+        <div><%= image_tag '/work/Ruby-CRM-reports.png', class: 'work-image' %></div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <h3>Ruby CRM</h3>
+      <p>This customer relation management software helps project managers schedule projects, track leads, track financial data,
+         handle reporting, and more. Some of its unique features are: photo and file storage for leads, email generators, letter
+         generators, and dynamic data (capable of creating any project task or type). It comes with a comprehensive search engine.
+       </p>
+       <a href="https://github.com/CoffeeAndCream/ruby-crm.git"><%= image_tag 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png', class: 'business-logos' %>Ruby CRM
+       </a>
+       <hr>
+       <b>Technologies</b>
+       <br>
+       <br>
+       <%= image_tag 'http://rubyonrails.org/images/rails-logo.svg', class: 'business-logos' %>
+       <br>
+       <br>
+       <%= image_tag 'https://www.stormwindstudios.com/wp-content/uploads/2017/04/AWS-Logo2.png', class: 'business-logos' %>
+       <br>
+       <br>
+       <%= image_tag 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9kOoLD_D-3Awa08YvopA3oSmdW25OYPFIcdpjj2gF0SCUghf', class: 'business-logos' %>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-lg-3">
+      <h3>NewsFlash</h3>
+      <p>
+        Probably my favorite application. I have ended up using it far more than any of my other applications because it gives me
+        a quick snapshot of world events, sports, technology, and more. You simply choose your news source and 10+ of the top
+        articles pop up for your convenience. Adding other sources simply pushes the previous ones down and out of the way.
+       </p>
+       <a href="https://github.com/CoffeeAndCream/newsflash"><%= image_tag 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png', class: 'business-logos' %>NewsFlash
+       </a>
+       <hr>
+       <b>Technologies</b>
+       <br>
+       <br>
+       <%= image_tag 'https://nodeblog.files.wordpress.com/2011/07/nodejs.png', class: 'business-logos' %>
+       <br>
+       <br>
+       <%= image_tag 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9kOoLD_D-3Awa08YvopA3oSmdW25OYPFIcdpjj2gF0SCUghf', class: 'business-logos' %>
+    </div>
+    <div class="col-lg-9">
+      <div class="newsflash-slideshow">
+        <div><%= image_tag '/work/newsflash-frontpage.png', class: 'work-image' %></div>
+        <div><%= image_tag '/work/newsflash-articles.png', class: 'work-image' %></div>
+      </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+    </div>
+    <div class="col-lg-4">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+    </div>
+    <div class="col-lg-4">
+    </div>
+  </div>
+</div>
 <section class="jumbotron text-center">
-  <h2><img class="jumbo-thumbnail" src="https://cdn.auth0.com/styleguide/1.0.0/img/badge.svg"></h2>
-  <h1>RoR Auth0 Sample</h1>
-  <p>Step 1 - Login.</p>
-  <a class="btn btn-success btn-lg" onclick="signin()">Login</a>
+  <p>Want to contact me for work?</p>
+  <a class="btn btn-success btn-lg" onclick="signin()">Sign In</a>
 </section>
+<script>
+$(document).on('turbolinks:load', function() {
+  $('.ruby-crm-slideshow').slick({
+    dots: true,
+    arrows: true,
+    slidesToShow: 1,
+    centerMode: true
+  });
+});
+$(document).on('turbolinks:load', function() {
+  $('.newsflash-slideshow').slick({
+    dots: true,
+    arrows: true,
+    slidesToShow: 1,
+    centerMode: true
+  });
+});
+</script>
