@@ -12,7 +12,7 @@ class DashboardController < ApplicationController
     @body = params[:email][:body]
     respond_to do |format|
       # Tell the UserMailer to send a welcome email after save
-      UserMailer.contact_email(@user, @email, @phone, @subject, @body).deliver_now
+      UserMailer.contact_email(@user, @email, @phone, @subject, @body).deliver_now!
       format.js { render 'email_sent.js'}
     end
   end
