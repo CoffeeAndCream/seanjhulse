@@ -211,7 +211,11 @@
   <h3><b>Want to contact me for work? Just want to say hi?</b></h3>
   <p>Please do me a favor and sign in via Google. This will help me keep spam bots out and it'll help me
   track usage of my website!</p>
-  <a class="btn btn-success btn-lg" onclick="signin()">Sign In</a>
+  <% if :authenticate_user? %>
+    <a class="btn btn-primary btn-lg" href="/contact-me">Contact me</a>
+  <% else %>
+    <a class="btn btn-primary btn-lg" onclick="signin()">Sign in</a>
+  <% end %>
 </section>
 <script>
 $(document).on('turbolinks:load', function() {
