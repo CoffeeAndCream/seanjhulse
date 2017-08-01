@@ -3,6 +3,14 @@ body {
 }
 .container {
   background-color: white;
+  padding: 25px;
+}
+.slideshow {
+}
+.static-image {
+}
+.container:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .business-logos {
   width: 75px;
@@ -10,20 +18,53 @@ body {
 .work-image {
   max-height: 500px !important;
 }
+#work-paragraph {
+  text-align: justify;
+}
 .ruby-slideshow {
   background-color: #fafafa;
 }
 .shadow {
-  box-shadow: -2px 5px 10px rgba(0,33,33,.15);
-  margin: 50px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 .skills {
   margin-left: 33%;
   margin-bottom: 50px;
   max-width: 100px;
 }
+.language-description {
+  border: solid 1px darkgrey;
+  display: none;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.language-top {
+  position: absolute;
+  margin-top: -355px;
+}
+.language-bottom {
+  position: absolute;
+  margin-top: -40px;
+}
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px;
+  cursor: pointer;
+}
 .hobbies {
   max-width: 150px;
+}
+#small-break {
+  background-color: #f5f5f5;
+  width: 100%;
+  padding-right: 110% !important;
+  height: 20px;
 }
 #page-break {
   background-color: #f5f5f5;
@@ -35,5 +76,4 @@ body {
   width: 300px;
   float: right;
   margin: 10px auto;
-  box-shadow: -2px 5px 10px rgba(0,33,33,.15);
 }

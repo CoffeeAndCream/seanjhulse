@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'dashboard/show'
 
-  get '/' => 'home#show'
+  root to: 'home#show'
 
   get '/contact-me' => 'dashboard#show'
 

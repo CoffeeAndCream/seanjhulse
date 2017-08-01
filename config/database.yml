@@ -1,25 +1,25 @@
 development:
   adapter: postgresql
-  encoding: utf8
+  encoding: unicode
   database: seanjhulse
   pool: 5
   username: postgres
-  password: password
+  password: turn0ffth3l1ghts
   host: localhost
 
 test: &TEST
   adapter: postgresql
-  encoding: utf8
+  encoding: unicode
   database: seanjhulse
   pool: 5
   username: postgres
-  password: password
+  password: turn0ffth3l1ghts
   host: localhost
 
 production:
   adapter: postgresql
-  encoding: utf8
+  encoding: unicode
   database: seanjhulse
   pool: 5
   username: postgres
-  password: password
+  password: turn0ffth3l1ghts

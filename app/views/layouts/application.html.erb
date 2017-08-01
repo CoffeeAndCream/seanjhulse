@@ -15,8 +15,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid" style="background-color:white;">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -24,19 +24,30 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <%= image_tag "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-1/p160x160/18951346_10213690848013374_1946179406048331833_n.jpg?oh=c90dff5dc49ae673b1868da07045d602&oe=59F34106", width: 50, height: 50, id: 'facebook-photo' %>
-          <a class="navbar-brand" href="#">Sean J Hulse</a>
+          <%= image_tag "https://cdn.pixabay.com/photo/2017/01/10/03/54/icon-1968238_960_720.png", width: 50, height: 50, id: 'facebook-photo' %>
+          <a class="navbar-brand" href="/">Sean J Hulse</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="<%= 'active' if params[:controller] == 'home' %>"><a href="/">My Work</a></li>
           </ul>
+          <ul class="nav navbar-right">
+            <li id="user-name">
+              <% unless @user.nil? %>
+                Hey, <%= @user[:info][:name] %>!
+              <% end %>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
-  <div class="container">
-    <%= yield %>
-  </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
   <%= javascript_include_tag '//cdn.auth0.com/js/auth0/8.8/auth0.min.js' %>
   <%= javascript_include_tag '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js' %>
   <script>
