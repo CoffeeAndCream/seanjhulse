@@ -1,7 +1,11 @@
 <br>
 <section class="jumbotron  text-center">
   <h1>Hey!</h1>
-  <h3>Thanks for signing in <%= @user[:extra][:raw_info][:given_name] %></h3>
+  <% if @user[:extra][:raw_info][:given_name] %>
+    <h3>Thanks for signing in <%= @user[:extra][:raw_info][:given_name] %></h3>
+  <% else %>
+    <h3>Thanks for visiting!</h3>
+  <% end %>
   <%= form_for :email, url: {controller: 'dashboard', action: 'contact'}, class: 'form-group', remote: true do |f| %>
     <% if @user[:info][:name] %>
       <%= f.hidden_field :user, value: @user[:info][:name] %>
