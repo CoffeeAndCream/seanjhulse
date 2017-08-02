@@ -1,315 +1,340 @@
-<div class="container shadow">
-  <h1 style="display:inline-block">About Me</h1>
-  <%= image_tag "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-1/p160x160/18951346_10213690848013374_1946179406048331833_n.jpg?oh=c90dff5dc49ae673b1868da07045d602&oe=59F34106", width: 75, height: 75, id: 'facebook-photo' %>
-  <br>
-  <br>
-  <h4>Sean J Hulse</h4>
-  <h5>Software Developer</h5>
-  <h5>Madison, WI</h5>
-  <hr>
-  <div class="row">
-    <div class="col-lg-12">
-      <p id="work-paragraph">
-        I live in <b>Madison, Wisconsin</b>. Also known as: <i style="color: #0095ff; font-weight: bold">cold</i>. But lucky for me (and my hardware), I prefer a cold Winter over a hot
-        Summer. Madison has been a great city as a young developer. It has a lot of diversity, activities, and a suprisingly large
-        amount of software development.
-        <br>
-        <br>
-        I consider myself a somewhat traditional Computer Scientist. After I graduated from my undergraduate university,
-        I returned to Community College to earn a second degree in Computer Science. While I was a fulltime copywriter, I took
-        every relevant course in C.S. Most of which covered the core principles of software development: database design, algorithms,
-        data structures, Linux, and more. <b>That being said, I learned 90% of web development on my own.</b> After studying web development
-        for hundreds of hours and building my own applications, I brought my skills into the real world and developed applications
-        for friends and businesses.
-        <br>
-        <br>
-        I'll always consider myself a student and I try to take classes whenever I can. But lately my schedule has kept me working
-        way more than fulltime. I like to think I'll be taking classes indefinitely. Even if I "master" C.S. (is that possible?)
-        I just like to know a lot about the world around me and how things work. I hope to someday be capable of building my own
-        automated robotics with a custom UI, which requires a lot of skills that I still need honing. But if web development has taught me anything, it's
-        that <b>I learn best by doing</b>.
-      </p>
+<div class="section-header container shadow">
+  <div class="section-header">
+    <h1 class="headers" style="display:inline-block; margin-top: 20px">About Me</h1>
+    <%= image_tag "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-1/p160x160/18951346_10213690848013374_1946179406048331833_n.jpg?oh=c90dff5dc49ae673b1868da07045d602&oe=59F34106", width: 75, height: 75, id: 'facebook-photo' %>
+    <br>
+    <div id="about-me">
+      <h5 id="about-me-info">Sean Hulse</h5> &middot;
+      <h5 id="about-me-info">Software Developer</h5> &middot;
+      <h5 id="about-me-info">Madison, Wisconsin</h5>
+    </div>
+    <div id="about-me-mobile">
+      <h5 id="about-me-info">Sean Hulse</h5>
+      <h5 id="about-me-info">Software Developer</h5>
+      <h5 id="about-me-info">Madison, Wisconsin</h5>
     </div>
   </div>
-</div>
-<div class="row" id="page-break"></div>
-<div class="container shadow">
-  <h1>My Work and Projects</h1>
-  <hr>
-  <div class="row">
-    <div class="col-lg-4">
-      <h3>Ruby CRM</h3>
-      <p id="work-paragraph">This customer relation management software helps project managers schedule projects, track leads, track financial data,
-         handle reporting, and more. Some of its unique features are: photo and file storage for leads, email generators, letter
-         generators, and dynamic data (capable of creating any project task or type). It comes with a comprehensive search engine.
-       </p>
-       <a href="https://github.com/CoffeeAndCream/ruby-crm.git"><%= image_tag 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png', class: 'business-logos' %>Ruby CRM
-       </a>
-       <hr>
-       <b>Technologies</b>
-       <br>
-       <br>
-       <%= image_tag 'http://rubyonrails.org/images/rails-logo.svg', class: 'business-logos' %>
-       <br>
-       <br>
-       <%= image_tag 'https://www.stormwindstudios.com/wp-content/uploads/2017/04/AWS-Logo2.png', class: 'business-logos' %>
-       <br>
-       <br>
-       <%= image_tag 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9kOoLD_D-3Awa08YvopA3oSmdW25OYPFIcdpjj2gF0SCUghf', class: 'business-logos' %>
-    </div>
-    <div class="col-lg-8">
-      <div class="ruby-slideshow slideshow">
-        <div><%= image_tag '/work/Ruby-CRM-leads.png', class: 'work-image' %></div>
-        <div><%= image_tag '/work/Ruby-CRM-lead.png', class: 'work-image' %></div>
-        <div><%= image_tag '/work/Ruby-CRM-reports.png', class: 'work-image' %></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row" id="small-break"></div>
-<div class="container shadow">
-  <div class="row">
-    <div class="col-lg-4">
-      <h3>MEAN Hotel API</h3>
-      <p id="work-paragraph">
-        This is a sample API which handles basic CRUD requests from any client. It allows users to make hotels, edit hotels, add reviews, and
-        add rankings. The hotels also take advantage of Mongoose's geolocation methods. You can quickly query the database to find hotels
-        within a given radius. I built this while following along with a class on the M.E.A.N. stack through
-        <a href="https://www.udemy.com/the-complete-javascript-developer-mean-stack-zero-to-hero/">Udemy</a>.
-       </p>
-       <a href="https://github.com/CoffeeAndCream/MEAN-Hotel-API/tree/master/sample"><%= image_tag 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png', class: 'business-logos' %>MEAN Hotel API
-       </a>
-       <hr>
-       <b>Technologies</b>
-       <br>
-       <br>
-       <%= image_tag 'https://nodeblog.files.wordpress.com/2011/07/nodejs.png', class: 'business-logos' %>
-       <%= image_tag 'https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png', class: 'business-logos' %>
-       <br>
-       <br>
-       <%= image_tag 'https://camo.githubusercontent.com/fc61dcbdb7a6e49d3adecc12194b24ab20dfa25b/68747470733a2f2f692e636c6f756475702e636f6d2f7a6659366c4c376546612d3330303078333030302e706e67', class: 'business-logos' %>
-       <%= image_tag 'https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg', class: 'business-logos' %>
-    </div>
-    <div class="col-lg-8">
-      <div class="static-image">
-        <div><%= image_tag 'https://udemy-images.udemy.com/course/750x422/687466_a08b.jpg', class: 'work-image' %></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row" id="small-break"></div>
-<div class="container shadow">
-  <div class="row">
-    <div class="col-lg-4">
-      <h3>NewsFlash</h3>
-      <p id="work-paragraph">
-        Probably my favorite application. I have ended up using it far more than any of my other applications because it gives me
-        a quick snapshot of world events, sports, technology, and more. You simply choose your news source and 10+ of the top
-        articles pop up for your convenience. Adding other sources simply pushes the previous ones down and out of the way. This
-        pulls from a News API in order to get images and source articles.
-       </p>
-       <a href="https://github.com/CoffeeAndCream/newsflash"><%= image_tag 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png', class: 'business-logos' %>NewsFlash
-       </a>
-       <hr>
-       <b>Technologies</b>
-       <br>
-       <br>
-       <%= image_tag 'https://nodeblog.files.wordpress.com/2011/07/nodejs.png', class: 'business-logos' %>
-       <br>
-       <br>
-       <%= image_tag 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9kOoLD_D-3Awa08YvopA3oSmdW25OYPFIcdpjj2gF0SCUghf', class: 'business-logos' %>
-    </div>
-    <div class="col-lg-8">
-      <div class="slideshow">
-        <div><%= image_tag '/work/newsflash-frontpage.png', class: 'work-image' %></div>
-        <div><%= image_tag '/work/newsflash-articles.png', class: 'work-image' %></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row" id="small-break"></div>
-<div class="container shadow">
-  <div class="row">
-    <div class="col-lg-4">
-      <h3>Coffee and Cream: Data Analysis</h3>
-      <p id="work-paragraph">
-        An old project of mine when I was in college. It plays with data analysis from static excel files.
-       </p>
-       <a href="https://github.com/CoffeeAndCream/mark_v.git"><%= image_tag 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png', class: 'business-logos' %>Coffee and Cream
-       </a>
-       <hr>
-       <b>Technologies</b>
-       <br>
-       <br>
-       <%= image_tag 'http://rubyonrails.org/images/rails-logo.svg', class: 'business-logos' %>
-       <br>
-       <br>
-       <%= image_tag 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9kOoLD_D-3Awa08YvopA3oSmdW25OYPFIcdpjj2gF0SCUghf', class: 'business-logos' %>
-    </div>
-    <div class="col-lg-8">
-      <div class="slideshow">
-        <div><%= image_tag '/work/coffee-and-cream-frontpage.png', class: 'work-image' %></div>
-        <div><%= image_tag '/work/coffee-and-cream-graphs.png', class: 'work-image' %></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row" id="page-break"></div>
-
-<div class="container shadow">
-  <h1>Languages I Use</h1>
-  <hr>
-  <br>
-  <div class="row">
-    <div class="col-lg-4">
-      <%= image_tag 'https://www.upgraderails.com/images/logo.png',  class: 'skills language' %>
-      <div class="language-description language-top">
-        <i class="material-icons close">close</i>
-        <p>
-          Ruby on Rails was my first web development language. When I was working in IT & taking classes, our
-          web developer recommended it to me. I've been playing and working with Ruby on Rails since. I'm also a
-          member of the <a href="https://www.meetup.com/Mad-Railers/">MadRailers</a> for Madison, WI.
-        </p>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <%= image_tag 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2000px-Unofficial_JavaScript_logo_2.svg.png',  class: 'skills language' %>
-      <div class="language-description language-top">
-        <i class="material-icons close">close</i>
-        <p>
-          JavaScript has made web development much easier in my opinion. I have used it for my whole stack on
-          on some applications, but most of the time I just use AJAX calls to make my websites more responsive.
-          I'd consider myself proficient in JS and fairly comfortable in Node.js and Express.
-        </p>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <%= image_tag 'https://isocpp.org/files/img/cpp_logo.png', class: 'skills language' %>
-      <div class="language-description language-top">
-        <i class="material-icons close">close</i>
-        <p>
-          C++ is my mainstay. Well... it doesn't keep the lights on right now, but I studied traditional algorithms and
-          data structures in C++ in college. It's definitely one of my favorite languages because it's close to the
-          hardware. I typically use QT (cute) for my deployable apps.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4">
-      <%= image_tag 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png', class: 'skills language' %>
-      <div class="language-description language-bottom">
-        <i class="material-icons close">close</i>
-        <p>
-          Python has been a hobby language of mine. I use it when I want to script something quickly. Usually,
-          I use it when I'm building robotics projects or developing automated bots for Reddit. I don't typically
-          need to use Python's OOP potential, but I have used it when helping my SO develop programs for her Physics
-          research.
-        </p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <%= image_tag 'https://upload.wikimedia.org/wikipedia/commons/c/c1/PHP_Logo.png',  class: 'skills language', style: 'margin-top: 25px;' %>
-      <div class="language-description language-bottom">
-        <i class="material-icons close">close</i>
-        <p>
-          I have only used PHP to help other people's projects come along. I've never even used Laravel or Symfony frameworks.
-          I'm usually only using PHP when I fiddle on projects that are already in production. It's a great language,
-          but I never spent the time to learn the LAMP stack professionally because I find it less convenient than
-          Node.js or Ruby.
-        </p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <%= image_tag 'https://cdn.codementor.io/assets/tutors/c-sharp-tutors-online.png',  class: 'skills language' %>
-      <div class="language-description language-bottom">
-        <i class="material-icons close">close</i>
-        <p>
-          C# has only been with me for one application that never made it to production. I was considering learning
-          ASP.NET development when I had a Windows computer, but shortly after I switched to Linux. Since then,
-          developing ASP.NET applications has been a bit of a pain so I haven't returned.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row" id="page-break"></div>
-<div class="container shadow">
-  <h1>Other Hobbies</h1>
-  <hr>
-  <br>
-  <div class="row">
-    <div class="col-lg-2">
-      <%= image_tag 'https://www.raspberrypi.org/app/uploads/2015/08/raspberry-pi-logo.png', class: 'hobbies' %>
-    </div>
-    <div class="col-lg-10">
-      <h2>Robotics</h2>
-      I'm pretty interested in robotics and machine learning. I've built a couple of different rovers that manuever based on visual and auditory input.
-      I typically use a <b>RaspberryPi</b> because they are user-friendly and have a lot of available RAM. I have also used Arduinos for robotics projects, but
-      they are often limited in space.
-      <br>
-      <br>
-      The only machine learning I've done is a course on Coursera taught by Andrew Ng along with following <b>OpenCV & Tensorflow guides.</b> One of my long term
-      goals is to build a robot that includes image classification in order to potentially have it tackle tasks that it was not hardwired to handle.
-      <br>
-      <br>
-      The RaspberryPi has given me a great baseline knowledge of working systems. I've used the RaspberryPi to build all types of projects for friends or
-      clients. I built an advertising and scheduling kiosk for a local Hockey team in Madison, WI. And I built a automatic video player for a live demo
-      display for a small gutter guard installation company.
-    </div>
-  </div>
-</div>
-<div class="row" id="small-break"></div>
-<div class="container shadow">
-  <div class="row">
-    <div class="col-lg-10">
-      <h2>Linux</h2>
-      <b>I love Linux.</b> When I first downloaded Ubuntu, I was a little turned off by the UI (being a Windows user my whole life). But then I installed Linux
-      Mint and fell in love. Since then, I've converted all my machines into Linux boxes. A few of them are Ubuntu because it's well supported but most
-      run the Mint distro.
-      <br>
-      <br>
-      I've also read quite a few books on Kali Linux in order to study Pen Testing with Metasploitable. Pen testing is definitely a headache and any real world
-      scenarios require a lot of patience. I usually prefer to have concrete evidence of progress in order to feel motivated. So, I took a step back from
-      pen testing unless it's too check the security of my own applications.
-    </div>
-    <div class="col-lg-2">
-      <%= image_tag 'https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png', class: 'hobbies' %>
-    </div>
-  </div>
-</div>
-<div class="row" id="small-break"></div>
-<div class="container shadow">
+  <div class="section-container">
+    <br>
+    <br>
     <div class="row">
-    <div class="col-lg-2">
-      <%= image_tag 'https://www.apogeerockets.com/includes/templates/edify/images/logo/Apogee%20Logo%20sm.png', class: 'hobbies' %>
-    </div>
-    <div class="col-lg-10">
-      <h2>Model Rockets</h2>
-      <%= image_tag '/hobbies/modelrocket.jpg', id: 'modelrocket' %>
-      Lately, I've been really interested in <b>model rocketry.</b> It's a lot of fun and it provides me with a good mixture of challenges and relaxation. My
-      most recent model "The Eclipse" is going to be shot off a day before the actual Eclipse down in Illinois. I'll post a photo so you can see
-      just how big it is!
-      <br>
-      <br>
-      I really enjoy building projects that have an impact in the physical world. It's a nice reprieve when 99% of my work is virtual. Someday, I'd like to
-      bring my software development skills somewhere physical. Machines and automata have been at the heart of programming since the beginning. Now that most
-      of our tasks can be handled online, people have sort of drifted away from its origins. I believe that - with the advent of the Machine Learning boom -
-      we are going to see computers interacting with the real world much more often. I'd love to be a part of that!
-      <br>
-      <br>
-      I guess what I'm trying to say is: building rockets is just the first step. I plan on eventually introducing GPS coordinate tracking systems along with
-      some more complex electronic "innards" of the payload. It would be really cool to overcome the technological challenges for something that literally
-      explodes itself into the air.
+      <div class="col-lg-12">
+        <p id="work-paragraph">
+          I live in <b>Madison, Wisconsin</b>. Also known as: <i style="color: #0095ff; font-weight: bold">cold</i>. But lucky for me (and my hardware), I prefer a cold Winter over a hot
+          Summer. Madison has been a great city as a young developer. It has a lot of diversity, activities, and a suprisingly large
+          amount of software development.
+          <br>
+          <br>
+          I consider myself a somewhat traditional Computer Scientist. After I graduated from my undergraduate university,
+          I returned to Community College to earn a second degree in Computer Science. While I was a fulltime copywriter, I took
+          every relevant course in C.S. Most of which covered the core principles of software development: database design, algorithms,
+          data structures, Linux, and more. <b>That being said, I learned 90% of web development on my own.</b> After studying web development
+          for hundreds of hours and building my own applications, I brought my skills into the real world and developed applications
+          for friends and businesses.
+          <br>
+          <br>
+          I'll always consider myself a student and I try to take classes whenever I can. But lately my schedule has kept me working
+          way more than fulltime. I like to think I'll be taking classes indefinitely. Even if I "master" C.S. (is that possible?)
+          I just like to know a lot about the world around me and how things work. I hope to someday be capable of building my own
+          automated robotics with a custom UI, which requires a lot of skills that I still need honing. But if web development has taught me anything, it's
+          that <b>I learn best by doing</b>.
+        </p>
+      </div>
     </div>
   </div>
 </div>
-<div class="row" id="page-break"></div>
+<br>
+<div class="container shadow">
+  <h1><i class="material-icons" id="red-font">work</i> My Work & Projects</h1>
+    <div class="row">
+      <div class="section-header">
+        <h3 class="project-title"><li>Ruby CRM</li></h3>
+      </div>
+      <div class="section-container work-container">
+        <div class="col-lg-4">
+          <p id="work-paragraph">This customer relation management software helps project managers schedule projects, track leads, track financial data,
+             handle reporting, and more. Some of its unique features are: photo and file storage for leads, email generators, letter
+             generators, and dynamic data (capable of creating any project task or type). It comes with a comprehensive search engine.
+           </p>
+           <br>
+           <a href="https://github.com/CoffeeAndCream/ruby-crm.git"><%= image_tag 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png', class: 'business-logos' %>Ruby CRM
+           </a>
+           <br>
+           <hr>
+           <br>
+           <b>Technologies I used: </b>
+           <br>
+           <br>
+           <%= image_tag 'http://rubyonrails.org/images/rails-logo.svg', class: 'business-logos' %>
+           <br>
+           <br>
+           <%= image_tag 'https://www.stormwindstudios.com/wp-content/uploads/2017/04/AWS-Logo2.png', class: 'business-logos' %>
+           <br>
+           <br>
+           <%= image_tag 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9kOoLD_D-3Awa08YvopA3oSmdW25OYPFIcdpjj2gF0SCUghf', class: 'business-logos' %>
+        </div>
+        <div class="col-lg-8 slider">
+          <div class="ruby-slideshow slideshow">
+            <div><%= image_tag '/work/Ruby-CRM-leads.png', class: 'work-image' %></div>
+            <div><%= image_tag '/work/Ruby-CRM-lead.png', class: 'work-image' %></div>
+            <div><%= image_tag '/work/Ruby-CRM-reports.png', class: 'work-image' %></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="section-header">
+        <h3 class="project-title"><li>MEAN Hotel API</li></h3>
+      </div>
+      <div class="section-container work-container">
+        <div class="col-lg-4">
+          <p id="work-paragraph">
+            This is a sample API which handles basic CRUD requests from any client. It allows users to make hotels, edit hotels, add reviews, and
+            add rankings. The hotels also take advantage of Mongoose's geolocation methods. You can quickly query the database to find hotels
+            within a given radius. I built this while following along with a class on the M.E.A.N. stack through
+            <a href="https://www.udemy.com/the-complete-javascript-developer-mean-stack-zero-to-hero/">Udemy</a>.
+           </p>
+           <a href="https://github.com/CoffeeAndCream/MEAN-Hotel-API/tree/master/sample"><%= image_tag 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png', class: 'business-logos' %>MEAN Hotel API
+           </a>
+           <br>
+           <hr>
+           <br>
+           <b>Technologies I used: </b>
+           <br>
+           <br>
+           <%= image_tag 'https://nodeblog.files.wordpress.com/2011/07/nodejs.png', class: 'business-logos' %>
+           <%= image_tag 'https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png', class: 'business-logos' %>
+           <br>
+           <br>
+           <%= image_tag 'https://camo.githubusercontent.com/fc61dcbdb7a6e49d3adecc12194b24ab20dfa25b/68747470733a2f2f692e636c6f756475702e636f6d2f7a6659366c4c376546612d3330303078333030302e706e67', class: 'business-logos' %>
+           <%= image_tag 'https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg', class: 'business-logos' %>
+        </div>
+        <div class="col-lg-8">
+          <div class="static-image">
+            <div><%= image_tag 'https://udemy-images.udemy.com/course/750x422/687466_a08b.jpg', class: 'work-image' %></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="section-header">
+        <h3 class="project-title"><li>News Flash</li></h3>
+      </div>
+      <div class="section-container work-container">
+        <div class="col-lg-4">
+          <p id="work-paragraph">
+            Probably my favorite application. I have ended up using it far more than any of my other applications because it gives me
+            a quick snapshot of world events, sports, technology, and more. You simply choose your news source and 10+ of the top
+            articles pop up for your convenience. Adding other sources simply pushes the previous ones down and out of the way. This
+            pulls from a News API in order to get images and source articles.
+           </p>
+           <a href="https://github.com/CoffeeAndCream/newsflash"><%= image_tag 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png', class: 'business-logos' %>NewsFlash
+           </a>
+           <br>
+           <hr>
+           <br>
+           <b>Technologies I used: </b>
+           <br>
+           <br>
+           <%= image_tag 'https://nodeblog.files.wordpress.com/2011/07/nodejs.png', class: 'business-logos' %>
+           <br>
+           <br>
+           <%= image_tag 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9kOoLD_D-3Awa08YvopA3oSmdW25OYPFIcdpjj2gF0SCUghf', class: 'business-logos' %>
+        </div>
+        <div class="col-lg-8">
+          <div class="slideshow">
+            <div><%= image_tag '/work/newsflash-frontpage.png', class: 'work-image' %></div>
+            <div><%= image_tag '/work/newsflash-articles.png', class: 'work-image' %></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="section-header">
+        <h3 class="project-title"><li>Coffee And Cream of Data Analysis</li></h3>
+      </div>
+      <div class="section-container work-container">
+        <div class="col-lg-4">
+            <p id="work-paragraph">
+            An old project of mine when I was in college. It plays with data analysis from static excel files.
+           </p>
+           <a href="https://github.com/CoffeeAndCream/mark_v.git"><%= image_tag 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png', class: 'business-logos' %>Coffee and Cream
+           </a>
+           <br>
+           <hr>
+           <br>
+           <b>Technologies I used: </b>
+           <br>
+           <br>
+           <%= image_tag 'http://rubyonrails.org/images/rails-logo.svg', class: 'business-logos' %>
+           <br>
+           <br>
+           <%= image_tag 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9kOoLD_D-3Awa08YvopA3oSmdW25OYPFIcdpjj2gF0SCUghf', class: 'business-logos' %>
+        </div>
+        <div class="col-lg-8">
+          <div class="slideshow">
+            <div><%= image_tag '/work/coffee-and-cream-frontpage.png', class: 'work-image' %></div>
+            <div><%= image_tag '/work/coffee-and-cream-graphs.png', class: 'work-image' %></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container shadow">
+  <div class="section-header">
+    <h1 class="headers"><i class="material-icons" id="blue-font">code</i> Programming Languages</h1>
+  </div>
+  <div class="section-container">
+    <br>
+    <div class="row">
+      <div class="col-lg-4">
+        <%= image_tag 'https://www.upgraderails.com/images/logo.png',  class: 'skills language' %>
+        <div class="language-description language-top">
+          <span class="close">x</span>
+          <p>
+            Ruby on Rails was my first web development language. When I was working in IT & taking classes, our
+            web developer recommended it to me. I've been playing and working with Ruby on Rails since. I'm also a
+            member of the <a href="https://www.meetup.com/Mad-Railers/">MadRailers</a> for Madison, WI.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <%= image_tag 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2000px-Unofficial_JavaScript_logo_2.svg.png',  class: 'skills language' %>
+        <div class="language-description language-top">
+          <span class="close">x</span>
+          <p>
+            JavaScript has made web development much easier in my opinion. I have used it for my whole stack on
+            on some applications, but most of the time I just use AJAX calls to make my websites more responsive.
+            I'd consider myself proficient in JS and fairly comfortable in Node.js and Express.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <%= image_tag 'https://isocpp.org/files/img/cpp_logo.png', class: 'skills language' %>
+        <div class="language-description language-top">
+          <span class="close">x</span>
+          <p>
+            C++ is my mainstay. Well... it doesn't keep the lights on right now, but I studied traditional algorithms and
+            data structures in C++ in college. It's definitely one of my favorite languages because it's close to the
+            hardware. I typically use QT (cute) for my deployable apps.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png', class: 'skills language' %>
+        <div class="language-description language-bottom">
+          <span class="close">x</span>
+          <p>
+            Python has been a hobby language of mine. I use it when I want to script something quickly. Usually,
+            I use it when I'm building robotics projects or developing automated bots for Reddit. I don't typically
+            need to use Python's OOP potential, but I have used it when helping my SO develop programs for her Physics
+            research.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag 'https://upload.wikimedia.org/wikipedia/commons/c/c1/PHP_Logo.png',  class: 'skills language', style: 'margin-top: 25px;' %>
+        <div class="language-description language-bottom">
+          <span class="close">x</span>
+          <p>
+            I have only used PHP to help other people's projects come along. I've never even used Laravel or Symfony frameworks.
+            I'm usually only using PHP when I fiddle on projects that are already in production. It's a great language,
+            but I never spent the time to learn the LAMP stack professionally because I find it less convenient than
+            Node.js or Ruby.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag 'https://cdn.codementor.io/assets/tutors/c-sharp-tutors-online.png',  class: 'skills language' %>
+        <div class="language-description language-bottom">
+          <span class="close">x</span>
+          <p>
+            C# has only been with me for one application that never made it to production. I was considering learning
+            ASP.NET development when I had a Windows computer, but shortly after I switched to Linux. Since then,
+            developing ASP.NET applications has been a bit of a pain so I haven't returned.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container shadow ">
+  <div class="section-header">
+    <h1 class="headers"><i class="material-icons" id="green-font">explore</i> Hobbies</h1>
+  </div>
+  <div class="section-container">
+    <br>
+    <div class="row">
+      <div class="col-lg-2">
+        <%= image_tag 'https://www.raspberrypi.org/app/uploads/2015/08/raspberry-pi-logo.png', class: 'hobbies' %>
+      </div>
+      <div class="col-lg-10">
+        <h2>Robotics</h2>
+        I'm pretty interested in robotics and machine learning. I've built a couple of different rovers that manuever based on visual and auditory input.
+        I typically use a <b>RaspberryPi</b> because they are user-friendly and have a lot of available RAM. I have also used Arduinos for robotics projects, but
+        they are often limited in space.
+        <br>
+        <br>
+        The only machine learning I've done is a course on Coursera taught by Andrew Ng along with following <b>OpenCV & Tensorflow guides.</b> One of my long term
+        goals is to build a robot that includes image classification in order to potentially have it tackle tasks that it was not hardwired to handle.
+        <br>
+        <br>
+        The RaspberryPi has given me a great baseline knowledge of working systems. I've used the RaspberryPi to build all types of projects for friends or
+        clients. I built an advertising and scheduling kiosk for a local Hockey team in Madison, WI. And I built a automatic video player for a live demo
+        display for a small gutter guard installation company.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2">
+        <%= image_tag 'https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png', class: 'hobbies' %>
+      </div>
+      <div class="col-lg-10">
+        <h2>Linux</h2>
+        <b>I love Linux.</b> When I first downloaded Ubuntu, I was a little turned off by the UI (being a Windows user my whole life). But then I installed Linux
+        Mint and fell in love. Since then, I've converted all my machines into Linux boxes. A few of them are Ubuntu because it's well supported but most
+        run the Mint distro.
+        <br>
+        <br>
+        I've also read quite a few books on Kali Linux in order to study Pen Testing with Metasploitable. Pen testing is definitely a headache and any real world
+        scenarios require a lot of patience. I usually prefer to have concrete evidence of progress in order to feel motivated. So, I took a step back from
+        pen testing unless it's too check the security of my own applications.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2">
+        <%= image_tag 'https://www.apogeerockets.com/includes/templates/edify/images/logo/Apogee%20Logo%20sm.png', class: 'hobbies' %>
+      </div>
+      <div class="col-lg-10">
+        <h2>Model Rockets</h2>
+        <%= image_tag '/hobbies/modelrocket.jpg', id: 'modelrocket' %>
+        Lately, I've been really interested in <b>model rocketry.</b> It's a lot of fun and it provides me with a good mixture of challenges and relaxation. My
+        most recent model "The Eclipse" is going to be shot off a day before the actual Eclipse down in Illinois. I'll post a photo so you can see
+        just how big it is!
+        <br>
+        <br>
+        I really enjoy building projects that have an impact in the physical world. It's a nice reprieve when 99% of my work is virtual. Someday, I'd like to
+        bring my software development skills somewhere physical. Machines and automata have been at the heart of programming since the beginning. Now that most
+        of our tasks can be handled online, people have sort of drifted away from its origins. I believe that - with the advent of the Machine Learning boom -
+        we are going to see computers interacting with the real world much more often. I'd love to be a part of that!
+        <br>
+        <br>
+        I guess what I'm trying to say is: building rockets is just the first step. I plan on eventually introducing GPS coordinate tracking systems along with
+        some more complex electronic "innards" of the payload. It would be really cool to overcome the technological challenges for something that literally
+        explodes itself into the air.
+      </div>
+    </div>
+  </div>
+</div>
+<br>
 <section class="container shadow jumbotron text-center">
   <h3><b>Want to contact me for work? Just want to say hi?</b></h3>
-  <p>Please do me a favor and sign in via Google. This will help me keep spam bots out and it'll help me
-  track usage of my website!</p>
+  <h5>Please do me a favor and sign in via Google. This will help me keep spam bots out and it'll help me
+  track usage of my website!</h5>
   <% if @user.nil? %>
     <a class="btn btn-primary btn-lg" onclick="signin()">Sign in</a>
   <% else %>

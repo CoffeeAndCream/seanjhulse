@@ -14,14 +14,74 @@
  *= require_self
  */
 
+html,body{overflow-x: hidden;}
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive;
+}
+
+@media only screen and (max-width: 900px) {
+  .hide-on-ipad {
+    display: none;
+  }
+  #about-me {
+    display: none;
+  }
+  #about-me-mobile {
+    display: block;
+  }
+  #about-me-info {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .work-container {
+    margin-bottom: 75%;
+    overflow: visible;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  #about-me {
+    display: none;
+  }
+  #about-me-mobile {
+    display: block;
+  }
+  #about-me-info {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #about-me-mobile {
+    display: none;
+  }
+}
+.headers {}
+.headers:hover{
+  text-decoration: underline;
+}
 .jumbo-thumbnail {
     height: 150px;
     width: 200px;
 }
-
 .jumbo-thumbnail img {
     top: 53%;
     max-width: 20%;
+}
+.slick-slide {
+   max-height: 600px;
+}
+
+.slick-slide img {
+   max-height: 600px;
 }
 .slick-prev:before, .slick-next:before {
     color: #0095ff !important;
@@ -34,7 +94,7 @@
   border-radius: 50%;
   border-style: solid;
   float: left;
-  margin: 0px 10px 0px 0px;
+  margin: 5px 10px 0px 0px;
 }
 .form-group.required .control-label:after {
   content:"*";
@@ -42,5 +102,6 @@
 }
 #user-name {
   margin-top: 15px;
-  padding-right: 50px;
+  padding-right: 10px;
+  color: #666;
 }
